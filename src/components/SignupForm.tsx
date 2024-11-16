@@ -43,7 +43,7 @@ const SignupForm: React.FC = () => {
         onChange={(e) => setConfirmPassword(e.target.value)}
       />
       <button type="submit">Sign Up</button>
-      <button type="button" onClick={(e) => {navigate('/')}}>Login</button>
+      <button type="button" onClick={(e) => {navigate('/widget-dashboard-client/')}}>Login</button>
     </form>
   );
 };

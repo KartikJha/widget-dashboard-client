@@ -14,7 +14,7 @@ const LoginForm: React.FC = () => {
       const { token } = response.data
 
       localStorage.setItem('token', token)
-      navigate('/dashboard') // Redirect to the dashboard
+      navigate('/widget-dashboard-client/dashboard') // Redirect to the dashboard
     } catch (err) {
       console.error('Login failed:', err)
     }
@@ -37,7 +37,7 @@ const LoginForm: React.FC = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button type="submit">Login</button>
-        <button type="button" onClick={(e) => {navigate('/signup')}}>Signup</button>
+        <button type="button" onClick={(e) => {navigate('/widget-dashboard-client/signup')}}>Signup</button>
       </form>
       
     </>
